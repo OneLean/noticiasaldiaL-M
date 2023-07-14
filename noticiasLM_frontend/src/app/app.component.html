@@ -1,20 +1,23 @@
 <style>
-  .pss{
+  .pss {
     font-weight: 600;
   }
 </style>
 
 <!-- Toolbar -->
-  <div class="max-w-7xl mx-auto bg-cyan-200">
-    <section class="p-4 flex justify-between items-center">
-      <p class="text-2xl font-bold"><a routerLink="">HOLA MUNDO</a></p>
-      <nav>
-        <ul class="flex space-x-4 text-xl">
-          <li><a routerLink="/home">Inicio</a></li>
-          <li [ngClass]="{'pss': currentSection === '/create'}"><a routerLink="/create">Crear Noticia</a></li>
-          <li><a routerLink="/contact">Contacto</a></li>
-        </ul>
-      </nav>
-    </section>    
-  </div>
+<div class="max-w-7xl mx-auto">
+  <section class="p-4 flex justify-between items-center bg-slate-700 text-gray-200">
+    <p class="text-2xl font-bold"><a routerLink="">HOLA MUNDO</a></p>
+    <nav>
+      <ul class="flex space-x-4 text-xl">
+        <li><a routerLink="/home">Inicio</a></li>
+        <li [ngClass]="{'pss': currentSection === '/create'}"><a routerLink="/create">Crear Noticia</a></li>
+        <li><a routerLink="/contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </section>
+  <!-- app.component.html -->
+  
+
+</div>
 <router-outlet></router-outlet>
